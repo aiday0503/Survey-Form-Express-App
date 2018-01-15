@@ -1,0 +1,44 @@
+<!Doctype html>
+<html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-light" style="background-color: #3877aa">
+            <a class="navbar-brand" href="#">Survey Form</a>
+        </nav>
+        <form action="/process" method="post">
+            <div class="form-group">
+                <label for="name" class="col-sm-2 control-label">Your Name:</label>
+                <input type="text" class="form-control" name="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="location" class="col-sm-2 control-label">Dojo Location:</label>
+                <select class="form-control" name="location">
+                <option>Mountain View</option>
+                <option>Los Angeles</option>
+                <option>San Francisco</option>
+                <option>Seattle</option>
+            </select>
+            </div>
+            <div class="form-group">
+                <label for="language" class="col-sm-2 control-label">Favorite Language:</label>
+                <select class="form-control" name="language">
+                <option>Python</option>
+                <option>JavaScript</option>
+                <option>Ruby</option>
+                <option>C#</option>
+            </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1" class="col-sm-offset-2 col-sm-10">Comment (optional)</label><br>
+                <textarea class="form-control" name="comment" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary mb-2">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
